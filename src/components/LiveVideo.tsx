@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 export const LiveVideo = () => {
-  const appId = "839aac95aedf4ff6a4adc9b8ea530409";
+  const appId = import.meta.env.VITE_AGORA_APP_ID;
   const { channelName } = useParams();
 
   const [activeConnection, setActiveConnection] = useState(true);
